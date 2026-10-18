@@ -1,0 +1,184 @@
+.service-label { margin-top: 27px; }
+.service-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; margin: -1px 0 17px; }
+.service-card { display: flex; min-width: 0; align-items: center; gap: 10px; padding: 12px; border: 1px solid #edf0f3; border-radius: 10px; background: #fff; box-shadow: 0 3px 12px #33465a05; transition: transform .16s, box-shadow .16s, border-color .16s; }
+.service-card:hover { transform: translateY(-2px); border-color: #dce9e1; box-shadow: 0 7px 18px #33465a0c; }
+.service-card-icon { display: grid; width: 34px; height: 34px; flex: 0 0 auto; place-items: center; border-radius: 9px; font-size: 19px; font-weight: 600; }
+.service-cpted .service-card-icon { color: #4d9278; background: #eaf5ef; }
+.service-crime .service-card-icon { color: #6380b3; background: #edf2fb; }
+.service-game .service-card-icon { color: #c08d4e; background: #fbf4e8; }
+.service-card-copy { display: grid; min-width: 0; gap: 4px; }
+.service-card-copy strong { overflow: hidden; color: #465568; font-size: 10px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.service-card-copy small { overflow: hidden; color: #9aa3ae; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.service-card-arrow { margin-left: auto; color: #a1ada7; font-size: 13px; }
+
+.subpage-main { min-height: 100vh; margin-left: 246px; }
+.subpage-main .page-content { max-width: 1140px; }
+.subpage-hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 22px; }
+.subpage-hero h1 { margin-bottom: 7px; }
+.subpage-hero p { max-width: 640px; margin: 0; color: #8792a1; font-size: 11px; line-height: 1.7; }
+.subpage-kicker { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; color: #6f9a87; font-size: 9px; font-weight: 700; letter-spacing: 1px; }
+.subpage-kicker .eyebrow-dot { width: 6px; height: 6px; }
+.demo-notice { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 17px; padding: 11px 13px; border: 1px solid #eee6d7; border-radius: 8px; color: #92764e; background: #fffaf0; font-size: 9px; line-height: 1.6; }
+.demo-notice strong { color: #7d623c; }
+.demo-notice-icon { display: grid; width: 18px; height: 18px; flex: 0 0 auto; place-items: center; border-radius: 50%; color: #9d7a42; background: #f8ecd1; font-size: 11px; font-weight: 700; }
+.subpage-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .75fr); gap: 15px; align-items: start; }
+.subpage-panel { padding: 20px; border: 1px solid #edf0f3; border-radius: 11px; background: #fff; box-shadow: 0 3px 12px #33465a05; }
+.subpage-panel h2 { margin: 0 0 5px; color: #334156; font-size: 14px; font-weight: 700; letter-spacing: -.3px; }
+.subpage-panel-intro { margin-bottom: 17px; color: #99a2ae; font-size: 9px; line-height: 1.6; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 13px; }
+.form-field { min-width: 0; margin-bottom: 13px; }
+.form-field.full-width { grid-column: 1 / -1; }
+.form-field label, .form-field legend { display: block; margin-bottom: 6px; color: #566174; font-size: 10px; font-weight: 600; }
+.form-field label .required-mark { color: #d77966; }
+.form-field input, .form-field select, .form-field textarea { width: 100%; min-height: 38px; padding: 9px 10px; border: 1px solid #e7ebef; border-radius: 7px; outline: none; color: #465365; background: #fff; font-size: 10px; }
+.form-field textarea { min-height: 95px; resize: vertical; line-height: 1.6; }
+.form-field input::placeholder, .form-field textarea::placeholder { color: #b3bac3; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: #82b39a; box-shadow: 0 0 0 3px #eaf4ee; }
+.form-field fieldset { padding: 0; border: 0; }
+.choice-row { display: flex; flex-wrap: wrap; gap: 7px; }
+.choice-option { position: relative; }
+.choice-option input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.choice-option span { display: inline-flex; min-height: 31px; align-items: center; padding: 0 10px; border: 1px solid #e8ecf0; border-radius: 6px; color: #8792a1; background: #fff; font-size: 9px; cursor: pointer; }
+.choice-option input:checked + span { border-color: #cde1d5; color: #46856e; background: #f1f8f4; }
+.choice-option input:focus-visible + span { outline: 2px solid #5c987f; outline-offset: 2px; }
+.form-help { margin: 5px 0 0; color: #a2aab5; font-size: 8px; line-height: 1.5; }
+.form-field label.consent-row { display: flex; align-items: flex-start; gap: 8px; margin: 0; color: #838e9d; font-size: 9px; line-height: 1.6; cursor: pointer; }
+.consent-row input { width: 14px; min-height: 14px; flex: 0 0 auto; margin: 1px 0 0; accent-color: #39866f; }
+.form-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+.request-list { display: grid; gap: 9px; margin-top: 15px; }
+.request-item { padding: 11px; border: 1px solid #eef1f3; border-radius: 8px; background: #fff; }
+.request-item-head { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 5px; }
+.request-item strong { color: #566174; font-size: 9px; }
+.request-item p { margin: 0; color: #929ca9; font-size: 8px; line-height: 1.55; }
+.request-status { flex: 0 0 auto; padding: 3px 6px; border-radius: 4px; color: #56856f; background: #edf6f0; font-size: 8px; }
+.side-info-list { display: grid; gap: 13px; margin: 15px 0 0; padding: 0; list-style: none; }
+.side-info-list li { display: flex; gap: 9px; color: #7e8998; font-size: 9px; line-height: 1.65; }
+.side-info-number { display: grid; width: 21px; height: 21px; flex: 0 0 auto; place-items: center; border-radius: 6px; color: #4c8b71; background: #edf6f0; font-size: 9px; font-weight: 700; }
+.subpage-callout { margin-top: 15px; padding: 12px; border-radius: 8px; color: #788493; background: #f5f8f6; font-size: 9px; line-height: 1.7; }
+.subpage-callout strong { color: #4e8069; }
+
+.crime-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(255px, .8fr); gap: 15px; align-items: stretch; }
+.map-tools { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 14px 0 11px; }
+.map-tools select { min-height: 32px; padding: 0 9px; border: 1px solid #e9edf0; border-radius: 6px; color: #677386; background: #fff; font-size: 9px; }
+.map-helper { margin: 5px 0 0; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 9px; color: #8e98a5; font-size: 8px; }
+.legend-entry { display: inline-flex; align-items: center; gap: 5px; }
+.risk-dot { width: 7px; height: 7px; border-radius: 50%; }
+.risk-low { background: #72aa8b; }.risk-mid { background: #e5b05e; }.risk-high { background: #e17d69; }
+.crime-map { position: relative; display: grid; min-height: 332px; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 7px; overflow: hidden; padding: 14px; border-radius: 9px; background: #f0f3ed; }
+.crime-map:before, .crime-map:after { position: absolute; z-index: 0; background: #fff; content: ""; }
+.crime-map:before { top: 49%; left: -5%; width: 110%; height: 13px; transform: rotate(-12deg); box-shadow: 0 1px 0 #e4e5de; }
+.crime-map:after { top: -5%; left: 49%; width: 12px; height: 110%; transform: rotate(8deg); box-shadow: 1px 0 0 #e4e5de; }
+.crime-zone { position: relative; z-index: 1; display: grid; min-width: 0; align-content: center; justify-items: center; gap: 4px; padding: 7px; border: 1px solid #ffffffb8; border-radius: 8px; color: #4e5b68; cursor: pointer; transition: transform .14s, box-shadow .14s, opacity .14s; }
+.crime-zone:hover, .crime-zone.selected { z-index: 2; transform: scale(1.025); box-shadow: 0 4px 12px #33465a1a; }
+.crime-zone.selected { outline: 2px solid #547e6a; outline-offset: 1px; }
+.crime-zone[data-risk="low"] { background: #dcecdf; }.crime-zone[data-risk="medium"] { background: #f5e8c9; }.crime-zone[data-risk="high"] { background: #f4ddd5; }
+.crime-zone strong { font-size: 10px; }
+.crime-zone span { color: #74808b; font-size: 8px; }
+.map-road-label { position: absolute; z-index: 2; top: 47%; left: 50%; padding: 2px 5px; border-radius: 3px; color: #9ba39e; background: #ffffffdf; font-size: 7px; transform: translate(-50%, -50%) rotate(-12deg); }
+.crime-map-caption { display: flex; justify-content: space-between; gap: 8px; margin-top: 9px; color: #a1a9b2; font-size: 8px; }
+.area-detail-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.crime-detail-panel { padding: 15px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+.area-detail-top h3 { margin: 2px 0 4px; color: #39475a; font-size: 15px; }
+.area-detail-top p { margin: 0; color: #a0a8b3; font-size: 8px; }
+.risk-badge { padding: 5px 7px; border-radius: 5px; color: #56866e; background: #edf6f0; font-size: 8px; font-weight: 600; white-space: nowrap; }
+.risk-badge.medium { color: #a87838; background: #fbf3e4; }.risk-badge.high { color: #bb6c57; background: #fff0eb; }
+.crime-count { display: flex; align-items: baseline; gap: 5px; margin: 19px 0 4px; color: #344257; font-size: 26px; font-weight: 700; letter-spacing: -.8px; }
+.crime-count span { color: #929ca8; font-size: 9px; font-weight: 500; letter-spacing: 0; }
+.crime-count-note { margin: 0 0 15px; color: #a0a8b3; font-size: 8px; }
+.category-list { display: grid; gap: 12px; }
+.category-row { display: grid; grid-template-columns: 47px 1fr 25px; align-items: center; gap: 8px; color: #7f8a98; font-size: 8px; }
+.category-row[hidden] { display: none; }
+.category-row strong { color: #667386; font-size: 8px; text-align: right; }
+.category-bar { height: 5px; overflow: hidden; border-radius: 9px; background: #f0f2f3; }
+.category-bar span { display: block; height: 100%; border-radius: inherit; background: #dfaa64; }
+.category-row:nth-child(2) .category-bar span { background: #e1836e; }.category-row:nth-child(3) .category-bar span { background: #87a2c8; }
+.crime-detail-note { margin: 16px 0 0; padding-top: 11px; border-top: 1px solid #eef0f2; color: #a1a9b2; font-size: 8px; line-height: 1.6; }
+.crime-quick-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+.crime-fact { padding: 13px; border: 1px solid #edf0f3; border-radius: 9px; background: #fff; }
+.crime-fact span { display: block; margin-bottom: 6px; color: #98a1ad; font-size: 8px; }
+.crime-fact strong { color: #455469; font-size: 15px; }
+
+.game-page { --game-accent: #ea9d57; }
+.game-page .subpage-kicker { color: #bd8748; }
+.game-page .eyebrow-dot { background: #e5a45e; box-shadow: 0 0 0 3px #fbf1e4; }
+.game-hero { position: relative; overflow: hidden; margin-bottom: 17px; padding: 22px 25px; border: 1px solid #f0e4d3; border-radius: 12px; background: linear-gradient(110deg, #fff8ed 0%, #f7f2ff 100%); }
+.game-hero:after { position: absolute; top: -34px; right: 55px; width: 145px; height: 145px; border: 1px solid #f0dfc7; border-radius: 50%; box-shadow: 0 0 0 22px #ffffff4d, 0 0 0 45px #ffffff30; content: ""; }
+.game-hero-content { position: relative; z-index: 1; max-width: 650px; }
+.game-hero h1 { font-size: clamp(25px, 2.4vw, 34px); }
+.game-hero p { max-width: 570px; margin: 0; color: #8d8b91; font-size: 10px; line-height: 1.7; }
+.game-badge { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 9px; padding: 5px 8px; border: 1px solid #f2dfc6; border-radius: 20px; color: #a8743b; background: #fffaf2; font-size: 8px; font-weight: 700; }
+.game-badge span { font-size: 11px; }
+.game-stage { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(250px, .8fr); gap: 15px; align-items: stretch; }
+.game-card { padding: 20px; border: 1px solid #edf0f3; border-radius: 11px; background: #fff; box-shadow: 0 3px 12px #33465a05; }
+.game-progress-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #8e98a5; font-size: 9px; }
+.game-progress-track { height: 6px; margin: 9px 0 21px; overflow: hidden; border-radius: 10px; background: #f1f2f3; }
+.game-progress-track span { display: block; width: 25%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #e9a052, #f3c26a); transition: width .25s; }
+.game-question-art { display: grid; min-height: 133px; place-items: center; margin-bottom: 17px; border-radius: 9px; background: linear-gradient(135deg, #f4f8f5, #f3f1fa); }
+.game-scene { display: grid; width: 94px; height: 94px; place-items: center; border: 1px solid #ffffff; border-radius: 50%; background: #fff; box-shadow: 0 7px 22px #47566210; font-size: 47px; }
+.game-question { min-height: 48px; margin: 0 0 15px; color: #39475a; font-family: "Noto Sans KR", sans-serif; font-size: 15px; font-weight: 700; letter-spacing: -.4px; line-height: 1.6; }
+.game-options { display: grid; gap: 8px; }
+.game-answer { display: flex; width: 100%; min-height: 43px; align-items: center; gap: 10px; padding: 8px 11px; border: 1px solid #e9edf0; border-radius: 8px; color: #6e7988; background: #fff; font-size: 10px; text-align: left; cursor: pointer; transition: border-color .14s, background .14s; }
+.game-answer:hover:not(:disabled) { border-color: #edd3ad; background: #fffbf5; }
+.game-answer:disabled { cursor: default; }
+.game-answer.correct-answer { border-color: #b9dac4; color: #477b61; background: #f1f8f3; }
+.game-answer.wrong-answer { border-color: #efd0c5; color: #a96756; background: #fff5f1; }
+.answer-letter { display: grid; width: 22px; height: 22px; flex: 0 0 auto; place-items: center; border-radius: 6px; color: #929ba7; background: #f3f5f6; font-size: 9px; font-weight: 700; }
+.game-answer.correct-answer .answer-letter { color: #4f8c6d; background: #dff0e4; }
+.game-feedback { min-height: 35px; margin: 12px 0 0; color: #56866c; font-size: 9px; font-weight: 600; line-height: 1.6; }
+.game-next-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 2px; }
+.game-score-pill { color: #9a8a72; font-size: 9px; }
+.game-side-card h2 { margin: 0 0 12px; color: #39475a; font-size: 12px; }
+.game-tip { display: flex; gap: 9px; padding: 10px 0; border-bottom: 1px solid #f0f2f4; color: #818c9a; font-size: 9px; line-height: 1.6; }
+.game-tip:last-of-type { border-bottom: 0; }
+.game-tip-icon { display: grid; width: 23px; height: 23px; flex: 0 0 auto; place-items: center; border-radius: 7px; color: #bb884e; background: #fbf4e9; font-size: 11px; }
+.grownup-note { margin-top: 14px; padding: 11px; border-radius: 8px; color: #92846d; background: #fff9ef; font-size: 8px; line-height: 1.7; }
+.grownup-note strong { color: #a7793f; }
+.game-finish { display: none; min-height: 320px; align-content: center; justify-items: center; text-align: center; }
+.game-finish.visible { display: grid; }
+.game-finish-art { display: grid; width: 78px; height: 78px; place-items: center; margin-bottom: 13px; border-radius: 50%; background: #fff5dc; font-size: 40px; }
+.game-finish h2 { margin-bottom: 5px; color: #39475a; font-family: "Noto Sans KR", sans-serif; font-size: 19px; }
+.game-finish p { max-width: 320px; margin-bottom: 15px; color: #8e98a5; font-size: 10px; line-height: 1.7; }
+.game-stage.finished .game-question-view { display: none; }
+.game-stage.finished .game-finish { display: grid; }
+.game-page .page-footer { margin-top: 18px; }
+
+@media (max-width: 1180px) {
+  .subpage-main { margin-left: 215px; }
+  .subpage-main .page-content { padding-right: 25px; padding-left: 25px; }
+  .service-strip { gap: 8px; }
+  .service-card { gap: 8px; padding: 10px 8px; }
+  .service-card-icon { width: 30px; height: 30px; }
+}
+@media (max-width: 940px) {
+  .subpage-main { margin-left: 68px; }
+  .service-label { display: none; }
+  .service-strip { grid-template-columns: 1fr; gap: 7px; margin-top: 0; }
+  .service-card { padding: 9px 11px; }
+  .service-card-copy { grid-template-columns: auto 1fr; align-items: baseline; gap: 8px; }
+  .service-card-copy strong, .service-card-copy small { font-size: 9px; }
+}
+@media (max-width: 720px) {
+  .subpage-main { margin-left: 0; }
+  .subpage-main .page-content { padding: 24px 17px 15px; }
+  .subpage-hero { align-items: flex-start; margin-bottom: 17px; }
+  .subpage-hero h1 { font-size: 24px; }
+  .subpage-grid, .crime-layout, .game-stage { grid-template-columns: 1fr; }
+  .subpage-panel, .game-card { padding: 16px; }
+  .crime-map { min-height: 300px; }
+  .game-hero { padding: 19px; }
+  .game-hero:after { right: -45px; }
+  .game-stage { gap: 11px; }
+  .game-question-art { min-height: 115px; }
+}
+@media (max-width: 450px) {
+  .subpage-main .page-content { padding-right: 13px; padding-left: 13px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-field.full-width { grid-column: auto; }
+  .map-tools { align-items: flex-start; flex-direction: column; }
+  .crime-map { min-height: 270px; gap: 5px; padding: 9px; }
+  .crime-quick-facts { gap: 6px; }
+  .crime-fact { padding: 9px; }
+  .crime-fact strong { font-size: 13px; }
+}

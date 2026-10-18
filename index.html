@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <meta
+      name="description"
+      content="우리 동네 안전 정보를 한눈에 확인하고 생활 속 안전을 함께 지켜요."
+    />
+    <title>세이프스팟 — 우리 동네 안전을 한눈에</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="portal-pages.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="주 메뉴">
+        <a class="brand" href="#home" aria-label="세이프스팟 홈">
+          <img class="brand-logo" src="safespot_logo.png" alt="세이프스팟, 안전한 우리 동네" />
+        </a>
+
+        <div class="sidebar-label">안전 대시보드</div>
+        <nav class="side-nav">
+          <a class="nav-link active" href="#home" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+            <span>안전 현황</span>
+          </a>
+          <a class="nav-link" href="#resources">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5v-12Z"/><path d="M4 16.5A2.5 2.5 0 0 1 6.5 14H20M8 7h7"/></svg>
+            <span>안전 가이드</span>
+          </a>
+        </nav>
+        <div class="sidebar-label service-label">함께 쓰는 안전 서비스</div>
+        <nav class="side-nav">
+          <a class="nav-link" href="해커톤/index.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9l6-5 6 5v11M9 20v-6h6v6"/><path d="M12 4V2"/></svg>
+            <span>CPTED 안심맵</span>
+          </a>
+          <a class="nav-link" href="해커톤_지도/index.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6 9 3.5l6 2.5 5.5-2.5v14L15 20l-6-2.5L3.5 20V6Z"/><path d="M9 3.5v14m6-12v14"/><circle cx="12" cy="10" r="1.5"/></svg>
+            <span>위험할지도</span>
+          </a>
+          <a class="nav-link" href="해커톤_게임/index.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 20 7v5.5c0 4.5-3.1 7.8-8 9.5-4.9-1.7-8-5-8-9.5V7l8-3.5Z"/><path d="m8.5 12 2.3 2.2 4.7-4.8"/></svg>
+            <span>꼬마 수호대 비밀 작전</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="emergency-card">
+            <span class="emergency-icon" aria-hidden="true">!</span>
+            <p>긴급 상황인가요?</p>
+            <span>경찰 · 소방에 바로 연결</span>
+            <a href="tel:112" class="emergency-call"><span>긴급 전화</span><span>112 ↗</span></a>
+          </div>
+          <div class="profile-row">
+            <div class="profile-avatar" aria-hidden="true">안</div>
+            <div class="profile-info"><strong>안심 이웃</strong><span>성북구 주민</span></div>
+            <button class="icon-button profile-menu" type="button" aria-label="프로필 메뉴">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+            </button>
+          </div>
+        </div>
+      </aside>
+      <button class="mobile-scrim" type="button" aria-label="메뉴 닫기"></button>
+
+      <main id="home" class="main-content">
+        <header class="topbar">
+          <div class="breadcrumb"><span>우리 동네</span><span class="breadcrumb-divider">/</span><strong>안전 현황</strong></div>
+          <div class="topbar-actions">
+            <span class="area-pill"><span class="status-dot"></span> 서울특별시 성북구</span>
+            <button class="icon-button notification-button" type="button" aria-label="알림">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4"/></svg>
+              <span class="notification-dot"></span>
+            </button>
+            <button class="mobile-menu icon-button" type="button" aria-label="메뉴 열기">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="welcome-row" aria-labelledby="welcome-title">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-dot"></span> 오늘도 안심하는 하루</div>
+              <h1 id="welcome-title">우리 동네 안전을<br class="mobile-break" /> 한눈에 확인해요<span class="title-period">.</span></h1>
+              <p class="welcome-subtitle">이웃과 함께 살피고, 더 안전한 동네를 만들어요.</p>
+            </div>
+            <button class="button button-primary report-open" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              안전 제보하기
+            </button>
+          </section>
+
+          <section class="stats-grid" aria-label="동네 안전 요약">
+            <article class="stat-card">
+              <div class="stat-top"><span>오늘의 안전 제보</span><span class="stat-icon icon-coral"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21 20H3L12 3Z"/><path d="M12 9v4m0 3h.01"/></svg></span></div>
+              <div class="stat-value">12<span class="stat-unit">건</span></div>
+              <div class="stat-foot"><span class="trend-neutral">지난주 평균 15건</span></div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span>확인된 안전 시설</span><span class="stat-icon icon-green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 20 7v5.5c0 4.5-3.1 7.8-8 9.5-4.9-1.7-8-5-8-9.5V7l8-3.5Z"/><path d="m8.5 12 2.3 2.2 4.7-4.8"/></svg></span></div>
+              <div class="stat-value">28<span class="stat-unit">곳</span></div>
+              <div class="stat-foot"><span class="trend-up">+3곳</span><span>이번 달 추가</span></div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span>안심 귀갓길</span><span class="stat-icon icon-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 17.5 9 12l4 4 7.5-8"/><path d="M14.5 8H20v5.5"/></svg></span></div>
+              <div class="stat-value">5<span class="stat-unit">개 코스</span></div>
+              <div class="stat-foot"><span>가까운 코스를 확인해 보세요</span></div>
+            </article>
+            <article class="stat-card status-stat">
+              <div class="stat-top"><span>우리 동네 안전 지수</span><span class="stat-icon icon-yellow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 20 7v5.5c0 4.5-3.1 7.8-8 9.5-4.9-1.7-8-5-8-9.5V7l8-3.5Z"/></svg></span></div>
+              <div class="score-row"><div class="stat-value">82<span class="score-out-of">/100</span></div><span class="safety-badge">양호</span></div>
+              <div class="score-track"><span></span></div>
+              <div class="stat-foot"><span>예시 지표 · 실제 치안 통계 아님</span></div>
+            </article>
+          </section>
+
+          <section class="service-strip" aria-label="안전 서비스 바로가기">
+            <a class="service-card service-cpted" href="해커톤/index.html">
+              <span class="service-card-icon" aria-hidden="true">⌂</span>
+              <span class="service-card-copy"><strong>CPTED 안심맵</strong><small>안전 취약 지역을 사진으로 찍어 개선 요청</small></span>
+              <span class="service-card-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="service-card service-crime" href="해커톤_지도/index.html">
+              <span class="service-card-icon" aria-hidden="true">⌖</span>
+              <span class="service-card-copy"><strong>위험할지도</strong><small>전국 범죄 통계를 지도에서 확인</small></span>
+              <span class="service-card-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="service-card service-game" href="해커톤_게임/index.html">
+              <span class="service-card-icon" aria-hidden="true">✳</span>
+              <span class="service-card-copy"><strong>꼬마 수호대: 비밀 작전!</strong><small>이야기 속 미션으로 안전 약속 배우기</small></span>
+              <span class="service-card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </section>
+
+          <section class="dashboard-grid" aria-label="안전 지도와 최근 제보" hidden>
+            <article id="map" class="panel map-panel">
+              <div class="panel-heading map-heading">
+                <div><h2>우리 동네 안전 지도</h2><p>주변 안전 정보를 확인해 보세요</p></div>
+                <button class="select-button" id="map-area-button" type="button" aria-label="지도 지역 선택">성북구 <span>⌄</span></button>
+              </div>
+              <div class="map-filter-row" role="group" aria-label="지도 표시 항목">
+                <button class="filter-chip active" type="button" data-filter="all"><span class="chip-dot dot-all"></span>전체</button>
+                <button class="filter-chip" type="button" data-filter="report"><span class="chip-dot dot-report"></span>안전 제보</button>
+                <button class="filter-chip" type="button" data-filter="facility"><span class="chip-dot dot-facility"></span>안전 시설</button>
+                <button class="filter-chip" type="button" data-filter="route"><span class="chip-dot dot-route"></span>안심길</button>
+              </div>
+              <div class="map-canvas" aria-label="성북구 주변의 예시 안전 지도">
+                <svg class="map-art" viewBox="0 0 760 370" preserveAspectRatio="xMidYMid slice" role="img" aria-label="도로와 공원이 표시된 지도">
+                  <rect width="760" height="370" fill="#eef3e9"/>
+                  <path d="M0 64 180 20l125 45 150-51 144 58 161-27v325H0Z" fill="#f5f5e9"/>
+                  <path d="M-20 282 83 237l95 11 48-75 93 14 65-54 123 32 55-62 104 14 115-70" fill="none" stroke="#fff" stroke-width="22"/>
+                  <path d="M-20 282 83 237l95 11 48-75 93 14 65-54 123 32 55-62 104 14 115-70" fill="none" stroke="#d9d9cd" stroke-width="2"/>
+                  <path d="M84-20 114 45l-24 63 30 53-23 62 20 57-41 115M251-15l-15 69 42 41-20 75 42 46-9 61 36 97M447-10l25 75-40 58 49 46-25 73 37 53-15 99M626-15l-6 71 48 42-25 73 33 55-24 64 44 83" fill="none" stroke="#fff" stroke-width="14"/>
+                  <path d="M84-20 114 45l-24 63 30 53-23 62 20 57-41 115M251-15l-15 69 42 41-20 75 42 46-9 61 36 97M447-10l25 75-40 58 49 46-25 73 37 53-15 99M626-15l-6 71 48 42-25 73 33 55-24 64 44 83" fill="none" stroke="#d9d9cd" stroke-width="1.5"/>
+                  <path d="m474 231 30-48 59 6 34 36-17 53-52 17-43-23Z" fill="#dcebd9"/>
+                  <path d="m116 41 30-23 29 14-6 37-36 12-23-17Z" fill="#dcebd9"/>
+                  <path d="M32 120h112M292 35h101M487 112h124M168 322h125M552 320h120" stroke="#e8e6d9" stroke-width="9" stroke-linecap="round"/>
+                  <text x="488" y="255" class="map-label">성북근린공원</text>
+                  <text x="118" y="191" class="map-label">성북로</text>
+                  <text x="308" y="294" class="map-label">동소문로</text>
+                  <text x="550" y="91" class="map-label">성북동</text>
+                  <text x="170" y="94" class="map-label">성북초등학교</text>
+                  <text x="365" y="208" class="map-label">성북구청</text>
+                  <path d="M225 253c34-25 48-9 80-26s39-47 72-41 42 27 68 15 30-36 59-35" class="safe-route-line"/>
+                  <g class="map-marker marker-report" data-map-type="report" transform="translate(305 165)"><circle r="17" fill="#fff" opacity=".7"/><circle r="11" fill="#f17764"/><path d="M305 159v7m0 4h.1" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g>
+                  <g class="map-marker marker-report" data-map-type="report" transform="translate(435 215)"><circle r="17" fill="#fff" opacity=".7"/><circle r="11" fill="#f17764"/><path d="M435 209v7m0 4h.1" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g>
+                  <g class="map-marker marker-facility" data-map-type="facility" transform="translate(180 120)"><circle r="15" fill="#fff" opacity=".75"/><circle r="10" fill="#5f9e83"/><path d="M180 114v12m-5-6h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g>
+                  <g class="map-marker marker-facility" data-map-type="facility" transform="translate(552 178)"><circle r="15" fill="#fff" opacity=".75"/><circle r="10" fill="#5f9e83"/><path d="M552 172v12m-5-6h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g>
+                  <g class="map-marker marker-route" data-map-type="route" transform="translate(500 145)"><circle r="15" fill="#fff" opacity=".75"/><circle r="10" fill="#8299d3"/><path d="m495 145 3.5 3.5 7-7" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+                </svg>
+                <div class="map-map-controls">
+                  <button type="button" class="map-control" id="zoom-in" aria-label="지도 확대">+</button>
+                  <button type="button" class="map-control" id="zoom-out" aria-label="지도 축소">−</button>
+                  <button type="button" class="map-control locate-control" id="locate-me" aria-label="현재 위치 확인"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></svg></button>
+                </div>
+                <div class="map-disclaimer">안전 정보 예시 화면 · 실시간 지도/관제 정보가 아닙니다</div>
+              </div>
+              <div class="map-footer"><span><i class="legend-dot dot-report"></i> 제보 위치 <i class="legend-dot dot-facility"></i> 안전 시설 <i class="legend-dot dot-route"></i> 안심 귀갓길</span><button class="text-button" type="button" id="open-map">지도 크게 보기 <span>↗</span></button></div>
+            </article>
+
+            <article id="reports" class="panel reports-panel">
+              <div class="panel-heading">
+                <div><h2>최근 동네 제보</h2><p>이웃이 공유한 안전 소식</p></div>
+                <a class="text-button" href="#reports-list">전체 보기 <span>→</span></a>
+              </div>
+              <div class="report-list" id="reports-list">
+                <article class="report-item">
+                  <span class="report-icon report-icon-amber"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21 20H3L12 3Z"/><path d="M12 9v4m0 3h.01"/></svg></span>
+                  <div class="report-copy"><div class="report-title-row"><h3>골목길 가로등 점검 필요</h3><span class="report-tag tag-pending">확인 중</span></div><p>성북로 18길 · 성북초등학교 뒤편</p><time datetime="2026-10-17T09:20">20분 전</time></div>
+                </article>
+                <article class="report-item">
+                  <span class="report-icon report-icon-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.2"/></svg></span>
+                  <div class="report-copy"><div class="report-title-row"><h3>안심 비상벨 위치 공유</h3><span class="report-tag tag-done">확인 완료</span></div><p>성북근린공원 입구 · 공중화장실 옆</p><time datetime="2026-10-17T08:45">오늘 오전 8:45</time></div>
+                </article>
+                <article class="report-item">
+                  <span class="report-icon report-icon-violet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 20 7v5.5c0 4.5-3.1 7.8-8 9.5-4.9-1.7-8-5-8-9.5V7l8-3.5Z"/><path d="m8.5 12 2.3 2.2 4.7-4.8"/></svg></span>
+                  <div class="report-copy"><div class="report-title-row"><h3>늦은 밤 순찰 강화 요청</h3><span class="report-tag tag-pending">확인 중</span></div><p>동소문로 24길 · 버스 정류장 주변</p><time datetime="2026-10-16T21:10">어제 오후 9:10</time></div>
+                </article>
+              </div>
+              <button class="button button-secondary report-open report-list-button" type="button">우리 동네 안전 제보하기 <span>＋</span></button>
+            </article>
+          </section>
+
+          <section id="resources" class="lower-grid" aria-label="안전 정보">
+            <article class="panel guide-panel">
+              <div class="panel-heading">
+                <div><h2>오늘의 안전 가이드</h2><p>작은 실천이 만드는 안전한 귀갓길</p></div>
+                <span class="guide-spark" aria-hidden="true">✳</span>
+              </div>
+              <div class="guide-content">
+                <div class="guide-illustration" aria-hidden="true">
+                  <div class="guide-moon"></div><div class="guide-star star-one">✦</div><div class="guide-star star-two">✦</div>
+                  <div class="guide-lamp"><span></span><i></i></div><div class="guide-figure"><i></i><b></b></div>
+                  <div class="guide-ground"></div>
+                </div>
+                <div class="guide-text">
+                  <span class="guide-kicker">NIGHT WALK · 01</span>
+                  <h3>밝고 익숙한 길로<br />함께 걸어요</h3>
+                  <p>늦은 시간에는 가로등이 있는 큰길을 이용하고, 주변 사람에게 귀가 경로를 미리 알려주세요.</p>
+                  <button type="button" class="text-button guide-more" id="guide-detail">안전 수칙 더 보기 <span>→</span></button>
+                </div>
+              </div>
+            </article>
+            <article class="panel quick-panel">
+              <div class="panel-heading"><div><h2>긴급 연락처</h2><p>위급할 때 바로 연결하세요</p></div><span class="quick-shield">SOS</span></div>
+              <a class="contact-row" href="tel:112"><span class="contact-icon contact-police">112</span><span class="contact-copy"><strong>경찰 신고</strong><small>범죄·위험 상황</small></span><span class="contact-arrow">↗</span></a>
+              <a class="contact-row" href="tel:119"><span class="contact-icon contact-fire">119</span><span class="contact-copy"><strong>소방·응급</strong><small>화재·구급·구조</small></span><span class="contact-arrow">↗</span></a>
+              <a class="contact-row" href="tel:1366"><span class="contact-icon contact-help">1366</span><span class="contact-copy"><strong>여성긴급전화</strong><small>24시간 상담·보호</small></span><span class="contact-arrow">↗</span></a>
+              <p class="emergency-note">긴급 상황에는 웹 제보보다 112 또는 119로 먼저 신고하세요.</p>
+            </article>
+          </section>
+          <footer class="page-footer"><span>세이프스팟 <span class="footer-dot">·</span> 이웃과 함께 만드는 안전한 동네</span><span>화면 내 통계와 제보는 서비스 미연동 예시 데이터입니다.</span></footer>
+        </div>
+      </main>
+    </div>
+
+    <dialog class="report-dialog" id="report-dialog" aria-labelledby="dialog-title">
+      <form id="report-form" method="dialog">
+        <div class="dialog-heading"><div><span class="dialog-kicker">NEIGHBORHOOD SAFETY</span><h2 id="dialog-title">안전 제보하기</h2></div><button type="button" class="icon-button dialog-close" aria-label="닫기">×</button></div>
+        <p class="dialog-intro">이웃과 공유할 안전 정보를 남겨주세요.<br /><strong>긴급 신고는 112 또는 119를 이용해 주세요.</strong></p>
+        <label class="field-label" for="report-category">제보 유형</label>
+        <select id="report-category" name="category" required>
+          <option value="">유형을 선택해 주세요</option><option>시설물 점검</option><option>어두운 골목길</option><option>위험 요소 발견</option><option>안전 시설 위치</option><option>기타 안전 정보</option>
+        </select>
+        <label class="field-label" for="report-location">위치</label>
+        <input id="report-location" name="location" type="text" placeholder="예: 성북로 18길, 성북초 뒤편" maxlength="80" required />
+        <label class="field-label" for="report-description">상세 내용</label>
+        <textarea id="report-description" name="description" placeholder="어떤 상황인지 자세히 알려주세요." rows="4" maxlength="500" required></textarea>
+        <p class="privacy-note">개인정보나 특정인을 식별할 수 있는 내용은 작성하지 말아 주세요. 제보는 이 화면에만 표시되며 실제 기관으로 전송되지 않습니다.</p>
+        <div class="dialog-actions"><button type="button" class="button button-secondary dialog-cancel">취소</button><button type="submit" class="button button-primary">제보 등록하기</button></div>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
